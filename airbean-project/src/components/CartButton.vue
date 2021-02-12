@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+        <div :class="{cartBackground: cartBoard.active}"></div>
         <button @click="cartBoard.active = !cartBoard.active">
             <img src="../assets/bag.svg" alt="">
             <div class="itemCount">
@@ -18,7 +19,7 @@
                             </li>
                         </ul>
                     </section>
-            </article>
+        </article>
   </div>
 </template>
 
@@ -50,6 +51,7 @@ export default {
         cursor: pointer;
 
         position: relative;
+        z-index: 2;
     }
 
     button:focus {outline:0;}
@@ -85,11 +87,12 @@ export default {
 
     .cartBoard {
         padding: 15px;
-        background-color: rgb(82, 155, 184);
+        background-color: white;
         position: relative;
         border-radius: 3px;
         min-width: 340px;
         height: min-content;
+        z-index: 3;
     }
 
     .cartBoard::before {
@@ -98,11 +101,20 @@ export default {
         height: 10px;
 
         position: absolute;
-        background-color: rgb(82, 155, 184);
+        background-color: white;
         top: -10px;
         right: 20px;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        z-index: 3;
     }
 
-
+    .cartBackground {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
 </style>
