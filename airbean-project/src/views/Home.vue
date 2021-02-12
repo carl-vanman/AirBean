@@ -1,15 +1,28 @@
 <template>
   <div class="home">
-    <Nav />
+    <header>
+      <Nav />
+      <CartButton />
+    </header>
   </div>
 </template>
 
 <script>
 import Nav from '@/components/Nav.vue'
+import CartButton from '../components/CartButton.vue'
 
 export default {
   components: {
-    Nav
+    Nav,
+    CartButton
   }
 }
 </script>
+
+<style scoped>
+header {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+</style>

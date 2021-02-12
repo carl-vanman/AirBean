@@ -7,6 +7,11 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
+:root {
+  --airBean-brown: #2F2926;
+  --airBean-orange: #E5674E;
+}
+
 #app {
   font-family: 'PT Serif', serif;;
   -webkit-font-smoothing: antialiased;
