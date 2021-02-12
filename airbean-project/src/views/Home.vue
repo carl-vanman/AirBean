@@ -8,15 +8,15 @@
 </template>
 
 <script>
-import Nav from '@/components/Nav.vue'
-import CartButton from '../components/CartButton.vue'
+import Nav from "@/components/Nav.vue";
+import CartButton from "../components/CartButton.vue";
 
 export default {
   components: {
     Nav,
-    CartButton
-  }
-}
+    CartButton,
+  },
+};
 </script>
 
 <style scoped>

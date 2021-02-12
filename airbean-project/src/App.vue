@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 
 :root {
-  --airBean-brown: #2F2926;
-  --airBean-orange: #E5674E;
+  --airBean-brown: #2f2926;
+  --airBean-orange: #e5674e;
+  --airBean-darkGreen: #0e927d;
+  --airBean-pink: #f3e4e1;
 }
 
 #app {
-  font-family: 'PT Serif', serif;;
+  font-family: "PT Serif", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
