@@ -2,7 +2,7 @@
   <div class="home">
     <header>
       <Nav />
-      <CartButton />
+      <CartButton class="cartButton"/>
     </header>
   </div>
 </template>
@@ -20,9 +20,14 @@ export default {
 </script>
 
 <style scoped>
-header {
+  header {
   display: flex;
   padding: 15px;
   justify-content: space-between;
 }
+
+.cartbutton {
+  flex-grow: 1;
+}
+
 </style>
