@@ -24,11 +24,19 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      name: "",
+      email: "",
+    };
   },
 
   methods: {
-    onSubmit: (name, email) => {},
+    onSubmit(name, email) {
+      this.$store.dispatch("setUser", {
+        inputName: name,
+        inputEmail: email,
+      });
+    },
   },
 };
 </script>

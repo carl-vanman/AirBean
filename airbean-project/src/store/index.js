@@ -18,8 +18,15 @@ export default new Vuex.Store({
   },
   mutations: {
 
+    setUser: (state, { inputName, inputEmail }) => {
+      state.userProfile['name'] = inputName;
+      state.userProfile['email'] = inputEmail;
+    }
   },
   actions: {
+    setUser({ commit }, {inputName, inputEmail}) {
+      commit('setUser', {inputName, inputEmail})
+    }
 
   },
   modules: {
