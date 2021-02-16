@@ -5,6 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    userProfile: {
+      name: "",
+      email: "",
+      orders: [] 
+    }
+  },
+  getters: {
+    getUser: state => {
+      return state.userProfile
+    }
   },
   mutations: {
   },

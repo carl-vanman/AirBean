@@ -1,20 +1,28 @@
 <template>
   <div>
     <div v-if="!showNav" class="navicon">
-      <img src="../assets/navicon.svg" alt="nav icon" v-on:click="navToggle(true)" />
+      <img
+        src="../assets/navicon.svg"
+        alt="nav icon"
+        v-on:click="navToggle(true)"
+      />
     </div>
 
     <div v-else class="nav">
-      <img src="../assets/close.svg" alt="close" v-on:click="navToggle(false)"/>
+      <img
+        src="../assets/close.svg"
+        alt="close"
+        v-on:click="navToggle(false)"
+      />
 
-      <div class="nav-links">
-        <router-link to="Menu" v-on:click="navToggle(false)">Meny</router-link>
+      <div class="nav-links" v-on:click="navToggle(false)">
+        <router-link to="Menu">Meny</router-link>
         <hr />
-        <router-link to="About" v-on:click="navToggle(false)">Vårt kaffe</router-link>
+        <router-link to="About">Vårt kaffe</router-link>
         <hr />
-        <router-link to="Profile" v-on:click="navToggle(false)">Min profil</router-link>
+        <router-link to="Profile">Min profil</router-link>
         <hr />
-        <router-link to="Status" v-on:click="navToggle(false)">Orderstatus</router-link>
+        <router-link to="Status">Orderstatus</router-link>
       </div>
     </div>
   </div>
@@ -31,15 +39,13 @@ export default {
   methods: {
     navToggle: function (val) {
       this.showNav = val;
-    }
-  }
+    },
+  },
 };
 </script>
 
 
 <style scoped>
-
-
 .nav {
   position: fixed;
   background-color: #2f2926;
@@ -50,7 +56,7 @@ export default {
 }
 
 img {
-  margin: 5%;
+  margin: 5% auto 0 5%;
 }
 
 .nav-links {
