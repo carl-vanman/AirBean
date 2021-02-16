@@ -35,6 +35,7 @@
   color: #42b983;
 }
 </style>
+<<<<<<< HEAD
 <template>
   <div id="app">
     <router-view />
@@ -78,3 +79,5 @@
   color: #42b983;
 }
 </style>
+=======
+>>>>>>> parent of 03fbac0 (test)
