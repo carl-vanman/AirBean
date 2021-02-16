@@ -6,6 +6,7 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 :root {
   --airBean-brown: #2f2926;
@@ -20,6 +21,10 @@
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   color: #2c3e50;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
 }
 
 #nav {

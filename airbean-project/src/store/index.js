@@ -8,7 +8,7 @@ export default new Vuex.Store({
     userProfile: {
       name: "",
       email: "",
-      orders: [] 
+      orders: []
     }
   },
   getters: {
@@ -17,8 +17,10 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+
   },
   actions: {
+
   },
   modules: {
   }
