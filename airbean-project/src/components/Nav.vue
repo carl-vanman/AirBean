@@ -79,6 +79,7 @@ hr {
   width: 13%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 2px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
+  margin: 0 auto 16px auto;
 }
 </style>

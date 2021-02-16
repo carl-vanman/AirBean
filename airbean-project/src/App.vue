@@ -7,6 +7,12 @@
 <style>
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --airBean-brown: #2f2926;
   --airBean-orange: #e5674e;

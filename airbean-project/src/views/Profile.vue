@@ -26,7 +26,7 @@ export default {
 
   computed: {
     getUserProfile() {
-      return this.$store.getters.getUser
+      return this.$store.getters.getUser;
     },
   },
 };
@@ -37,10 +37,10 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("../assets/menu_top.png");
+  background-image: url("../assets/header2.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #2f2926;
+  background-color: var(--airBean-brown);
   height: 100vh;
   width: 100vw;
 }
@@ -48,6 +48,6 @@ export default {
 .create-account {
   width: 91%;
   height: 85%;
-  margin: 2.5% auto auto auto
+  margin: 2.5% auto auto auto;
 }
 </style>
