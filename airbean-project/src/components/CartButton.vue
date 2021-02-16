@@ -104,7 +104,7 @@ li {
 
 .cartBoard {
   align-self: flex-end;
-  width: max(341px, 85%);
+  width: min(500px, calc(100% - 30px));
   padding: 1rem;
   border-radius: 3px;
   background-color: white;
