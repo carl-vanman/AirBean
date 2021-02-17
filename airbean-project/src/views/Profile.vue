@@ -3,7 +3,7 @@
     <Nav />
 
     <div class="orderhistory" v-if="getUserProfile.name">
-      <UserProfile />
+      <UserProfile :user="getUserProfile"/>
     </div>
 
     <div class="create-account" v-else>

@@ -73,6 +73,7 @@ img {
   font-size: 2rem;
   line-height: 120%;
   margin-bottom: 16px;
+  letter-spacing: 0.04em;
 }
 
 hr {
