@@ -6,7 +6,13 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
   --airBean-brown: #2f2926;
@@ -24,7 +30,7 @@
 }
 
 p {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 #nav {
